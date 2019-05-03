@@ -6,7 +6,7 @@
 }
 .nav {
   background-color: #F6F6F6;
-  height: 150px;
+  height: 100px;
   width: auto;
   margin-bottom: 1rem;
 }
@@ -23,19 +23,21 @@
   padding: 1.5rem;
   text-align: center;
 }
-.nav nav a {
+.nav nav p a {
+  flex-direction: row;
+  align-items: flex-start;
   margin-left: 2rem;
   text-decoration: none;
   color: #23293B;
   font-size: 2rem;
 }
 @media (max-width: 550px) {
-  .nav nav a {
+  .nav nav p a {
     margin-left: 5rem;
   }
 }
 @media (max-width: 550px) {
-  .nav nav a {
+  .nav nav p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

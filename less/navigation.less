@@ -4,7 +4,7 @@
 
 .nav {
     background-color: @nav-bg;
-    height: 150px;
+    height: 100px;
     width: auto;
     margin-bottom: 1rem;
     nav {
@@ -14,20 +14,28 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    
         h1 {
              font-size: 4rem;
              padding:1.5rem;
              text-align: center;
         }
+
+        p {
+            
+
+            a {
+                flex-direction: row;
+                align-items: flex-start;
+                margin-left: 2rem;
+                text-decoration: none;
+                color: @header-font-color;
+                font-size: 2rem;
+                @media @phone {
+                    margin-left: 5rem;
+                }
+        }
         
-        a {
-            margin-left: 2rem;
-            text-decoration: none;
-            color: @header-font-color;
-            font-size: 2rem;
-            @media @phone {
-                margin-left: 5rem;
-            }
         
         
         @media @phone {
