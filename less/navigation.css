@@ -1,0 +1,40 @@
+.flexbox-row {
+  display: row;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.nav {
+  background-color: #F6F6F6;
+  height: 100px;
+}
+.nav nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+}
+@media (max-width: 550px) {
+  .nav nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.nav nav h1 {
+  font-size: 4rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+.nav nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+@media (max-width: 550px) {
+  .nav nav a {
+    margin-left: 5rem;
+  }
+}

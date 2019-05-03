@@ -1,1 +1,21 @@
 // Mixins Here
+.flexbox-row {
+    display: row;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.create-btn (@radius) {
+    .btn {
+        width: 8rem;
+        font-size: 1.2rem;
+        text-align: center;
+        text-decoration-color: @porcelain;
+        background-color: @btn-bg-color;
+        border: .1rem solid @btn-bg-color;
+        border-radius: @radius;
+        padding: 1rem;
+    }
+}
+    
