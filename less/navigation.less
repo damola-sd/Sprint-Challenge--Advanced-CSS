@@ -4,36 +4,39 @@
 
 .nav {
     background-color: @nav-bg;
-    height: 100px;
+    height: 150px;
+    width: auto;
+    margin-bottom: 1rem;
     nav {
+        width: 800px;
+        margin: 0 auto;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        max-width: 800px;
-        width: 100%;
+        h1 {
+             font-size: 4rem;
+             padding:1.5rem;
+             text-align: center;
+        }
+        
+        a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: @header-font-color;
+            font-size: 2rem;
+            @media @phone {
+                margin-left: 5rem;
+            }
         
         
         @media @phone {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            
         }
     
-        h1 {
-            font-size: 4rem;
-            padding:1.5rem;
-            text-align: center;
-        }
     
-        a {
-            margin-left: 2rem;
-            text-decoration: none;
-            font-size: 2rem;
-            @media @phone {
-                margin-left: 5rem;
-            }
         }
     }
 }

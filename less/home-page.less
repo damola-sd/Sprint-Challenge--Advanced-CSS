@@ -48,9 +48,19 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    
+    @media @phone {
+      width: auto;
+      padding: 10px 10px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 100%;
+      }
 
       
 
@@ -69,6 +79,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
       
       img {
         width: 100%;
